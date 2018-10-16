@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化ECharts实例
+		var myChart = echarts.init(document.getElementById('main'));
+
+		// 指定图表的配置项和数据
+		// var option = {		   
+		//     series: [{
+		//         name: '销量',
+		//         type: 'pie',
+		//         data:[{
+		//         	name:"衬衫",
+		//         	value:5
+		//         },
+		//         {
+		//         	name:"羊毛衫",
+		//         	value:20
+		//         },
+		//         {
+		//         	name:"袜子",
+		//         	value:36
+		//         }
+		//         ]
+		//     }]
+		// };
+
+		var option = {
+					    xAxis: {
+					        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+					    },
+					    yAxis: {},
+					    series: [{
+					        name: '销量',
+					        type: 'bar',
+					        data: [5, 20, 30, 10, 10, 20]
+					    },
+					    {
+					        name: '产量',
+					        type: 'bar',
+					        data: [10, 10, 70, 30, 20, 40]
+					    }
+					    ]
+					};
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+		// 处理点击事件并且跳转到相应的百度搜索页面
+		//参数 params，是一个包含点击图形的数据信息的对象
+		myChart.on('click', function (params) {
+			if(params.name=="袜子")
+			{
+		    	//window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+				window.open('https://www.baidu.com/s?wd=' + params.name);
+				//加不加encodeURIComponent()函数都可以.函数作用把字符串按照URL组件进行编码,相应的解码函数encodeURIComponent()
+			}
+		});
+    </script>
+</body>
+</html>

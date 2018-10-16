@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <button  onclick="myFunction()">提交</button>
+    <input type="text" placeholder="请输入数字"  id="numb" required="required">
+    <script>
+        function myFunction(){
+            var aa=document.getElementById("numb").value;
+            if(isNaN(aa) ||aa < 1||aa > 9)
+            {
+                alert('输入错误');
+            }
+            else
+            {
+                alert('输入正确');
+            }
+        }
+    </script>
+    <form action="">
+        <input type="text" required="required">
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

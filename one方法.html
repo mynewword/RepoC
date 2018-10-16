@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="./jquery-3.3.1.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  // $("p:first").one("click",function(){
+  //   $(this).animate({fontSize:"+=6px"});
+  // });
+
+  // $("p").first().one("click",function(){
+  //   $(this).animate({fontSize:"+=6px"});
+  // });
+  // $("p").eq(0).one("click",function(){
+  //   $(this).animate({fontSize:"+=6px"});
+  // });
+  $("p:eq(0)").one("click",function(){
+    $(this).animate({fontSize:"+=6px"});
+  });
+});
+</script>
+</head>
+<body>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+<p>请点击 p 元素增加其内容的文本大小。每个 p 元素只会触发一次改事件。</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	div{
+		width: 100px;
+		height: 100px;
+
+	}
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="box1">hello world</div>
+    <div>你好，新世界</div>
+    <button>单击</button>
+    <input type="button" value="点击">
+    <script>
+    	 var aa=document.getElementsByTagName("div");
+    	//var aa=document.getElementsByClassName("box1");
+    	for(var i=0;i<aa.length;i++)
+    	{
+    		aa[i].onclick=function(){
+    			
+    			this.style.backgroundColor = "#FFCC80";
+    		}
+        }
+    	// $("div").click(function(){
+    	// 	$(this).css("background-color","yellow");
+    	// })
+    </script>
+</body>
+</html>

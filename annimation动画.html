@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+
+<style>
+        .box{height:100px;width:100px;border:15px solid black;
+            animation: changebox 10s ease-in-out   3 alternate paused both ;
+            }
+        .box:hover{
+            animation-play-state: running;
+        }
+        @keyframes changebox {
+            10% {  background:red;  }
+            50% {  width:80px;  }
+            70% {  border:15px solid yellow;  }
+            100% {  width:180px;  height:180px;  }
+        }
+    </style>
+</head>
+<body>
+ <div class="box"></div>
+</body>
+</html>

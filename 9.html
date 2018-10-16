@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	div{
+		width: 300px;
+		height: 300px;
+		background-color: yellow;
+	}
+	[type="button"]
+	{
+		width: 100px;
+		height: 50px;
+		background-color: pink;
+	}
+	img{
+		width: 50px;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+	<div class="ct" contenteditable="true">
+    	
+    </div>
+
+    <form action="">
+    	<input class="st" type="summit">
+    	<input class="tj" type="button" value="提交">
+    </form>
+    <ul class="pl"></ul>
+    <script type="text/javascript">
+    	var a1=document.getElementsByClassName('ct');
+    	var a10=document.getElementsByClassName('st');
+
+    	var a2=document.getElementsByClassName('tj');
+    	var a3=document.getElementsByClassName('pl');
+    	// a2[0].onclick = function(){
+    	// 	a3[0].innerHTML+='<li><span>评论</span>'+a1[0].innerHTML+'</li>';
+    	// 	a1[0].innerHTML='';
+
+    	// a2[0].onclick = function(){
+    	// 	a3[0].innerHTML+='<li><span>评论</span>'+a10[0].value+'</li>';
+    	// 	a10[0].value='';
+		//}
+    	var b1=document.querySelector('.ct');
+    	var b2=document.querySelector('.st');
+    	var b3=document.querySelector('.tj');
+    	var b4=document.querySelector('.pl');
+    	console.log(b3);
+    	b3.onclick = function() {
+    		b4.innerHTML+='<li><span>评论</span>'+b1.innerHTML+'</li>';
+    		b1.innerHTML='';
+    	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

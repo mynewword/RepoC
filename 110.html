@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<form id="ff" name="myform">
+		<input type="button" onclick="sec()" name="点击" value="点击">
+		<input type="text" name="ww">
+	</form>>
+	<button>点击2</button>
+	<select name="" id="sec">
+		<option value="">苹果</option>
+		<option value="">橘子</option>
+		<option value="">香蕉</option>
+	</select>
+    <script>
+    	var ab=/ab\d+/g;
+    	var aa= new RegExp('ab','g');
+    	var ac='ab1123ab199vcd';
+    	console.log(ac.split(/ab/));
+    	console.log(ac.replace(/\d+/g,'de'))
+    	var a=ab.test(ac);
+    	console.log(ac.match(ab));
+    	console.log(ac.match(aa));
+    	console.log('abdcdf-adfd');
+    	console.log(ab.exec(ac));
+    	var bb='a b    c';
+    	console.log(bb.split(/\s+/));
+    	var as='dong.zhang@wellintech.com';
+    	var ss='liping.cai@wellintech.com';
+    	var zr='zhangr@syst.com';
+    	var pp=/\w+\.\w+@wellintech\.com/;
+    	console.log(zr.match(pp));
+    	//alert(document.getElementById('ff').elements[1]);
+    	//console.log(document.getElementById('ff').elements[1])
+    	//alert(document.forms["myform"]["ww"].value);
+    	alert(document.forms["myform"].elements[0]);
+    	alert(ac.indexOf('b'));
+    	alert(ac.length);
+    	alert(typeof(ac));
+    	alert(ac.split("b"));
+
+    </script>
+    <script>
+    	function sec(){
+    		var x=document.getElementById('sec');
+    		//var x0=document.gete
+    		var c="";
+    		for(var y=0;y<x.length;y++)
+    		{
+    			var c=c+x.options[y].text;
+    			alert(c);
+    		}
+    	}
+    </script>
+</body>
+</html>

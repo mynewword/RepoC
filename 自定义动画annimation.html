@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 0px;
+		background-color: green;
+		opacity: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="box">dfdsjkaldsjf</div>
+    <script>
+    	// window.requestAnimationFrame=window.requestAnimationFrame || function (fn){
+    	// 	return setTimeout(fn, 1000/60);
+    	// }
+    	// window.cancelAnimationFrame=window.cancelAnimationFrame || clearTimeout;
+    	var xa=document.getElementsByClassName("box");
+		animation(xa[0],"opacity",0,-0.02);
+    	function animation(obj,attr,target,speed){
+    		var init=parseFloat(getstyle(obj,attr));
+    		//alert(init);
+    		(function fn(){
+    			init += speed;
+    			//console.log(init);
+    			
+    			//var timer=requestAnimationFrame(fn);
+    			var timer=setTimeout(fn,1000/60);
+    			//if(init>target)
+    			if(Math.abs(init-target)<Math.abs(speed))
+    			{
+    				init=target;
+    				//cancelAnimationFrame(timer);
+    				clearTimeout(timer);
+    			}
+    			if(attr='opacity')
+    			{
+    				obj.style[attr] = init;
+    			}
+    			else if(attr='left')
+    			{
+    				obj.style[attr] = init+"px";
+    			}
+    		})();
+    		
+    	}
+    	function getstyle(obj,attr){
+    		return window.getComputedStyle? getComputedStyle(obj)[attr]:obj.currentStyle[attr];
+    	}
+  		
+    </script>
+</body>
+</html>

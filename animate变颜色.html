@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+	}
+</style>
+</head>
+<body>
+	<div class="box"></div>
+    <script src="./jquery-3.3.1.min.js" ></script>
+    <script src="https://cdn.bootcss.com/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script>
+    	$(".box").delay(2000).animate({
+    		"width":"300px",
+    		"height":"300px",
+            "backgroundColor":"yellow"
+    	},5000,
+    	)
+    </script>
+</body>
+</html>

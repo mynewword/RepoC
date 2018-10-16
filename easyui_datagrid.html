@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+   <table id="dg" title="My Users" class="easyui-datagrid" style="width:550px;height:250px"
+        url="get_users.php"
+        toolbar="#toolbar"
+        rownumbers="true" fitColumns="true" singleSelect="true">
+    <thead>
+        <tr>
+            <th field="firstname" width="50">First Name</th>
+            <th field="lastname" width="50">Last Name</th>
+            <th field="phone" width="50">Phone</th>
+            <th field="email" width="50">Email</th>
+        </tr>
+    </thead>
+</table>
+<div id="toolbar">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">New User</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Edit User</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Remove User</a>
+</div> 
+</body>
+</html>

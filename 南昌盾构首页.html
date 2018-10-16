@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="content-type" content="text/html;charset=utf-8" /><title>
+	盾构远程监控系统-平台首页
+</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="/Css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript">var SESSIONID = "kblgyoihjiwgwejx1h1b41xe"; var BASE_URL = "http://118.31.42.138:88/"; var iscloseleft = false; var isBaseWindow = true;</script>
+    <script src="/js/Index.js" type="text/javascript"></script>
+    <style type="text/css">
+        .button {
+            width: 80px;
+            height: 25px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#c5c5c5) );
+            border-radius: .3em;
+        }
+
+        .msgdiv {
+            background: white;
+            border: 1px solid #777;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 12px;
+            line-height: 25px;
+            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+            margin-left: -225px;
+            margin-top: -75px;
+            width: 400px;
+            border-radius: 15px;
+            text-align: center;
+            z-index: 10001;
+            height: 305px;
+        }
+
+        .divpublic {
+            position: absolute;
+            top: 0px;
+            background: rgb(119, 119, 119);
+            opacity: 0.6;
+            left: 0px;
+            border-radius: 15px;
+            z-index: 10000;
+        }
+
+        .fotor {
+            margin: 0px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 3px;
+            background-size: 20px 30px;
+            background: url(Images/CMS/title2.png) -5px center no-repeat;
+            opacity: 0.75;
+            border: 1px solid red;
+            height: 22px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 12px;
+            line-height: normal;
+            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="clearfix">
+
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTk5NTUxOTYwMw9kFgICAw9kFgRmDw8WAh4HVmlzaWJsZWhkZAIBDw8WAh4EVGV4dAUV5qyi6L+O5oKo77ya566h55CG5ZGYZGRkBZOOJ3ZxDEhwh37u0PTzZqfRQcTBxynKbQ6NGVs7cis=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANKH0M1xwyX4XA9az7KugT9f75830NufEcW99EowBFQwl9mqcbl89Q+jQRQL4K4rfPaSWe8X/Vq082Tw07+Dq2XTXzzqQztq1RZoILdxe0F8Q==" />
+</div>
+        <div class="container clearfix">
+            <div class="header clearfix" id="header">
+                <div class="toolbar">
+                    <div class="adminmenu clearfix">
+                        <ul class="parentmenu clearfix">
+                            
+                            <li>
+                                <div class="menuname " onmouseover="$('#submenu_0').show();" onmouseout="$('#submenu_0').hide();">
+                                    基础数据管理<ul id="submenu_0" class="submenu clearfix">
+                                        
+                                        <li data-url="/Admin/ConfigManager.aspx" data-id="101" data-name="系统配置" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            系统配置
+										</li>
+                                        
+                                        <li data-url="/CMS/Manager/CategoryManager.aspx" data-id="112" data-name="新闻分类管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            新闻分类管理
+										</li>
+                                        
+                                        <li data-url="/CMS/Manager/ArticleManager.aspx" data-id="113" data-name="新闻内容管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            新闻内容管理
+										</li>
+                                        
+                                        <li data-url="/Admin/FunManager.aspx" data-id="90" data-name="功能管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            功能管理
+										</li>
+                                        
+                                        <li data-url="/Admin/ServerState.aspx" data-id="3" data-name="服务器状态" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            服务器状态
+										</li>
+                                        
+                                        <li data-url="/Admin/OrganizeManager.aspx" data-id="30" data-name="组织结构管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            组织结构管理
+										</li>
+                                        
+                                        <li data-url="/Admin/CompanyManager.aspx" data-id="40" data-name="盾构厂家管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            盾构厂家管理
+										</li>
+                                        
+                                        <li data-url="/Admin/DGManager.aspx" data-id="70" data-name="盾构信息管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            盾构信息管理
+										</li>
+                                        
+                                        <li data-url="/Admin/LineManager.aspx" data-id="50" data-name="线路信息管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            线路信息管理
+										</li>
+                                        
+                                        <li data-url="/Admin/CunCKJManager.aspx" data-id="81" data-name="存储空间管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            存储空间管理
+										</li>
+                                        
+                                        <li data-url="/Admin/ProjectManager.aspx" data-id="80" data-name="项目信息管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            项目信息管理
+										</li>
+                                        
+                                        <li data-url="/Admin/LineMapManager.aspx" data-id="60" data-name="线路地图管理" data-father="0" data-operating="-1" onclick="selectAdminFun(this);">
+                                            线路地图管理
+										</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="menuname " onmouseover="$('#submenu_115001').show();" onmouseout="$('#submenu_115001').hide();">
+                                    系统数据管理<ul id="submenu_115001" class="submenu clearfix">
+                                        
+                                        <li data-url="/Admin/UserGroupManager.aspx" data-id="20" data-name="用户组管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            用户组管理
+										</li>
+                                        
+                                        <li data-url="/Admin/UserManager.aspx" data-id="10" data-name="用户信息管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            用户信息管理
+										</li>
+                                        
+                                        <li data-url="/FileArchive/ArchiveTypeIndex.aspx" data-id="113001" data-name="附件类型管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            附件类型管理
+										</li>
+                                        
+                                        <li data-url="/Admin/NotifySystemManage.aspx" data-id="11500101" data-name="通知方案管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            通知方案管理
+										</li>
+                                        
+                                        <li data-url="/DGLongChenV2/MonitorType.aspx" data-id="111002" data-name="监测类型管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            监测类型管理
+										</li>
+                                        
+                                        <li data-url="/Admin/PositionManager.aspx" data-id="1003" data-name="车站位置管理" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            车站位置管理
+										</li>
+                                        
+                                        <li data-url="/Admin/UserLogManager.aspx" data-id="100102" data-name="用户日志查询" data-father="115001" data-operating="-1" onclick="selectAdminFun(this);">
+                                            用户日志查询
+										</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="menuname " onmouseover="$('#submenu_1').show();" onmouseout="$('#submenu_1').hide();">
+                                    用户中心<ul id="submenu_1" class="submenu clearfix">
+                                        
+                                        <li data-url="/Admin/UserSelfInfoManager.aspx" data-id="1001" data-name="个人信息管理" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            个人信息管理
+										</li>
+                                        
+                                        <li data-url="/Admin/TodoNoticeManager.aspx" data-id="1004" data-name="代办事项" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            代办事项
+										</li>
+                                        
+                                        <li data-url="/Admin/WebNoticeManager.aspx" data-id="112002" data-name="公告消息" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            公告消息
+										</li>
+                                        
+                                        <li data-url="/Admin/WebNoticeSend.aspx" data-id="11200203" data-name="预警发布" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            预警发布
+										</li>
+                                        
+                                        <li data-url="/Review/ReviewList.aspx" data-id="100002" data-name="反馈列表" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            反馈列表
+										</li>
+                                        
+                                        <li data-url="/Help/Help.aspx" data-id="1002" data-name="帮助中心" data-father="1" data-operating="-1" onclick="selectAdminFun(this);">
+                                            帮助中心
+										</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li>|</li>
+                            
+                            <li>
+                                <div id="user-noticepanel" class="noticepanel">
+                                    <label class="notice-icon" title="您有未读消息"></label>
+                                    <span id="LbUser" class="lblUserinfo">欢迎您：管理员</span>
+                                    <div id="user-notice-content" style="position: absolute;">
+                                        <div class="notice-title" style="text-align: center;">
+                                            <a href="/Admin/UserNoticeCenter.aspx?layer=-1&id=-1" target="contentframe" title="进入消息中心-查看历史记录">进入消息中心</a>
+                                        </div>
+                                        <hr />
+                                        <ul class="list-notice">
+                                            <li class="list-notice-item" style="display: block;">暂无未读消息</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="LbtExit" class="logout" href="javascript:__doPostBack(&#39;LbtExit&#39;,&#39;&#39;)">退出</a></li>
+                        </ul>
+                    </div>
+                    <div class="weather">
+                        <iframe name="sinaWeatherTool" style=" padding-left: 5px; padding-bottom: 2px;" width="200" height="22" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&py=nanchang&wind=0&num=1&site=12"></iframe>
+                    </div>
+                   
+                    <div class="serverTimer">
+                        <label id="showServertime" data-time="1535863383294" title="2018-09-02 12:43:03"></label>
+                    </div>
+                </div>
+                <!--toolbar-->
+                <div class="logo clearfix">
+                    <div class="bg">
+                        <div class="logotitle" onclick="location.href='/Index.aspx';"></div>
+                        <div class="webdgpic" onclick="window.open('/Zonglan/V2/ZongLanMap.aspx?layer=-1&_f=ltree&Id=-1','contentframe')">盾构远程监控系统-平台首页</div>
+                    </div>
+                </div>
+                <!--logo-->
+                <div class="menu clearfix">
+                    <ul class="menu_list clearfix"></ul>
+                </div>
+                <!--menu-->
+            </div>
+            <!--header-->
+            <div id="master-wrapper-main" class="master-wrapper-main clearfix">
+                <div id="realWarningRule" style="display: none">
+                    
+                    <input type="hidden" name="hidRuleIds" id="hidRuleIds" />
+                    <div id="=msgDiv" class="msgdiv">
+                        <h4 class="fotor"></h4>
+                        <div style="height: 250px; overflow: auto" id="ruleContent">
+                            <ul class="list-warningrule">
+                                <li class="list-warningrule-item" style="display: block;"></li>
+                            </ul>
+                        </div>
+                        <table border='0' width='100%' style="padding-right: 10px; background: #ddd; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px">
+                            
+                            <tr>
+                                <td align='right'>
+                                    <input type="button" class="button" id="btncolse" style="width: 80px; height: 25px" value="关闭"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                
+                <div class="page-sidebar-wrapper">
+                    <div class="side_left" onselectstart="return false;">
+                        <div class="left_bg1">
+                            <div class="left_bg2">
+                                <div class="left_main">
+                                    <div>
+                                        <div id="left-menu-selected" class="left-menu-selected hide clearfix" title="已选择">
+                                            <input type="hidden" name="currentSelectedFunction" value="" />
+                                            <input type="hidden" name="currentSelectedItemType" value="" />
+                                            <input type="hidden" name="currentSelectedItem" value="" />
+                                            <div class="select_info"><b>提示:</b><i>请选择要管理的项.</i></div>
+                                        </div>
+                                        <!--left-menu-selected-->
+                                        <div class="left-menu-tab clearfix">
+                                            <input type="hidden" name="listtype" value="1" />
+                                            <ul>
+                                                <li id="listtype_project" data-type="1">
+                                                    <a class="project" data-init="project-none" data-down="project">项目</a>
+                                                </li>
+                                                <li id="listtype_dungou" data-type="2">
+                                                    <a class="dungou-none" data-init="dungou-none" data-down="dungou">盾构</a>
+                                                </li>
+                                                <li id="listtype_line" data-type="3">
+                                                    <a class="line-none" data-init="line-none" data-down="line">线路</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--left-menu-tab-->
+                                        <div class="left-menu-filter  clearfix">
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" name="liststatus" value="1" checked="checked" />在建
+												
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" name="liststatus" value="10" />竣工
+												
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" name="liststatus" value="2" />未开始
+												
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input type="radio" name="liststatus" value="0" />全部
+												
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--left-menu-filter-->
+                                        <div id="left-menu-list" class="left-menu-list  clearfix">
+                                            <div id="left-menu-list-content">
+                                                <ul class="clearfix"></ul>
+                                            </div>
+                                        </div>
+                                        <!--left-menu-list-->
+                                        <div id="left-menu-tool" class="menu_tool hide clearfix">
+                                            <span class="up"></span><span class="top"></span><span class="down"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--left_main-->
+                            </div>
+                        </div>
+                        <!--left_bg1,left_bg2-->
+
+                    </div>
+                    <!--side_left-->
+                </div>
+                <!--page-sidebar-wrapper-->
+                <div class="page-content-warpper clearfix">
+                    <div class="center clearfix">
+                        <div id="hdt" class="hdt" title="收缩菜单"></div>
+                        <iframe id="mainFrame" name="contentframe" style="width: 100%; height: 100%;" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src=""></iframe>
+                    </div>
+                    <!--center-->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--master-wrapper-main-->
+        </div>
+        <!--container-->
+        <script type="text/javascript">
+
+            function showServerTime() {
+                var timer = $('label#showServertime');
+                var now = timer.data('time');
+                now = now + 1000;
+                timer.data('time', now);
+                timer.attr('title', '服务器时间：' + new Date(now).format('yyyy-MM-dd HH:mm:ss'));
+                timer.html(new Date().format('yyyy-MM-dd HH:mm:ss'));
+
+            }
+            $(document).ready(function () {
+                showServerTime();
+                setInterval(showServerTime, 1000);
+                loadCurrentMenus();
+                var $master = $("#master-wrapper-main");
+                var $master_sideleft = $("#master-wrapper-main .side_left");
+                var $master_center = $("#master-wrapper-main .center");
+                var $master_centerFrm = $("#master-wrapper-main .center #mainFrame");
+                var $side_left_list = $('#left-menu-list');
+                var $window = $(window);
+                var $body = $(document.body);
+                var $header = $("#header");
+                $('#hdt').click(function () {
+                    iscloseleft = !iscloseleft;
+                    $(this).attr("title", (iscloseleft ? "展开菜单" : "收缩菜单"));
+                    if (iscloseleft) {
+                        $(this).addClass("close");
+                    } else {
+                        $(this).removeClass("close");
+                    }
+                    $master_sideleft.animate({
+                        width: (iscloseleft ? "0" : "220px"),
+                    }, 300);
+                    $master_center.animate({
+                        marginLeft: (iscloseleft ? "5px" : "225px"),
+                    }, 300);
+                });
+                $('#user-noticepanel').hover(function () {
+                    $('#user-notice-content').show();
+                }, function () {
+                    $('#user-notice-content').hide();
+                });
+                function masterresize() {
+                    var fullwidth = ($window.width() <= 1280) ? 1280 : 1366;
+                    $body.height($window.height());
+                    if ($body.height() < 550) {
+                        $body.height($body.height(550));
+                        $body.css("overflow-y", "auto");
+                    } else {
+                        $body.css("overflow-y", "hidden");
+                    }
+                    $master.css("background-position", ($body.height() > 805) ? "center bottom" : "center top");
+
+                    var header_menu = $("#header .menu");
+                    header_menu.width(fullwidth - 254);
+                    $header.width(fullwidth);
+                    $master.width(fullwidth);
+                    var height = $body.height() - 87;
+                    $master_center.height(height);
+                    $master_centerFrm.height(height);
+                    $master_sideleft.height(height);
+                    $side_left_list.height($master_sideleft.height() - 130);
+                }
+
+                var $list_content = $('#left-menu-list-content');
+                var $side_menu_tool = $('#left-menu-tool');
+                //鼠标滚轮滚动
+                $list_content.on('mousewheel', function (event, delta) {
+                    var vel = Math.abs(delta);
+                    var top = $side_left_list.scrollTop();
+                    if (delta > 0) { //up
+                        $side_left_list.scrollTop(top - vel * 5);
+                    } else { //down
+                        $side_left_list.scrollTop(top + vel * 5);
+                    }
+                    return false;
+                });
+                var donghua;
+                $side_menu_tool.find("span.top").on("click", function () {
+                    $side_left_list.scrollTop(0);
+                });
+                $side_menu_tool.find("span.down,span.up").on("mouseout", function () {
+                    clearInterval(donghua);//悬浮向下滚动
+                });
+                $side_menu_tool.find("span.down,span.up").on("click", function () {//点击翻一页
+                    var span = $(this);
+                    var h = $side_left_list.height();
+                    var top = $side_left_list.scrollTop();
+                    clearInterval(donghua);//清除动画
+                    if (span.hasClass("up")) {
+                        $side_left_list.scrollTop(top - h);
+                    } else if (span.hasClass("down")) {
+                        $side_left_list.scrollTop(top + h);
+                    }
+                });
+                $side_menu_tool.find("span.down,span.up").on("mouseover", function () {
+                    var span = $(this);
+                    if (span.hasClass("up")) {
+                        donghua = setInterval(function () {
+                            var top = $side_left_list.scrollTop();
+                            $side_left_list.scrollTop(top - 1);
+                        }, 8);
+                    } else if (span.hasClass("down")) {
+                        donghua = setInterval(function () {
+                            var top = $side_left_list.scrollTop();
+                            $side_left_list.scrollTop(top + 1);
+                        }, 8);
+                    }
+                });
+                $master_sideleft.on("mouseover", function (event) {
+                    var outerH = $list_content.outerHeight(true);
+                    var h = $side_left_list.height();
+                    if (outerH > h) {
+                        if ($side_menu_tool.hasClass("show"))
+                            return;
+                        $side_menu_tool.removeClass("hide");
+                        $side_menu_tool.addClass("show");
+                    }
+                });
+                $master_sideleft.on("mouseout", function (event) {
+                    var outerH = $list_content.outerHeight(true);
+                    var h = $side_left_list.height();
+                    if (outerH > h) {
+                        if ($side_menu_tool.hasClass("hide"))
+                            return;
+                        $side_menu_tool.removeClass("show");
+                        $side_menu_tool.addClass("hide");
+                    }
+                });
+                masterresize();
+                $window.resize(function () {
+                    masterresize();
+                });
+                setTimeout("showNotices()", 3000); //页面打开3秒后加载公告消息
+                setTimeout("showRealWaringRules()", 3000); //页面打开3秒后加载公告消息
+            });
+            function showNotices() {
+                $.getJSON("/api/v2/GetNotices.ashx", function (response) {
+                    //if (!response.Data) return;
+                    console.log("2222222");
+                    var ul = $('#user-notice-content ul.list-notice');
+                    ul.empty();
+                    $('#user-noticepanel label.notice-icon').html(response.Data.length).hide();
+                    if (response.Data.length < 1) {
+                        ul.append('<li class="list-notice-item">暂无未读公告通知</li>');
+                        return;
+                    } else {
+                        $('#user-noticepanel label.notice-icon').show();
+                    }
+                    $(response.Data).each(function (i, v) {
+                        ul.append('<li class="list-notice-item">[' + v.NoticeTypeName + '] <a href="/Admin/NoticeDetails.aspx?layer=-1&id=-1&noticeId=' + v.NoticeId + '&recordId=' + v.RecordId + '" target="contentframe" onclick="setNotReadCount(this,-1)"><b>' + v.Title + '</b></a>' +
+		                    '<p>发布时间：' + v.PublishTime + '</p></li>');
+                    });
+                });
+                setTimeout("showNotices()", 120000);//每两分钟加载一次公告
+            }
+            //展示最近10分钟内的预警
+            function showRealWaringRules() {
+                $.getJSON("/api/v2/GetRealWraningRules.ashx", { hidRuleIds: $("#hidRuleIds").val() }, function (response) {
+                    $("#hidRuleIds").val("");
+                    var ul = $('#ruleContent ul.list-warningrule');
+                    ul.empty();
+                    if (response.Data.length > 1) {
+                        $('#realWarningRule').show();
+                    } else {
+                        $('#realWarningRule').hide();
+                    }
+                    $("#hidRuleIds").val(response.HideRuleIds);
+                    $(response.Data).each(function (i, v) {
+                        ul.append('<li class="list-warningrule-item"><div style="text-align: left;border:1px solid #f5f5f5;font-size:15px;">' + v.MessageTitle + '：</div><div style="text-align: -webkit-auto;border:1px solid #f5f5f5;font-size:13px;">&nbsp;&nbsp;&nbsp;' + v.MessageBody + '</div></li>');
+                    });
+                });
+                setTimeout("showRealWaringRules()", 60000);//每1分钟加载一次预警
+            }
+
+            $("#btncolse").click(function () {
+                $('#realWarningRule').hide();
+            });
+            function setNotReadCount(a, c) { // 设置未读数量-1 给用户一假象(实际数量会在2分钟后加载,并移除已读数据.)
+                var countHtml = $('#user-noticepanel label.notice-icon').html();
+                if (countHtml) {
+                    $(a).unbind();
+                    $(a).removeAttr('onclick');
+                    var count = Number(countHtml);
+                    if (count > 0) {
+                        count = count + c;
+                        $('#user-noticepanel label.notice-icon').html(count);
+                        if (count < 1) $('#user-noticepanel label.notice-icon').hide();
+                    }
+                }
+            }
+            function sAlert(strTitle, strContent) {
+                var msgw, msgh, bordercolor;
+                msgw = 400;//提示窗口的宽度
+                msgh = 100;//提示窗口的高度
+                var titleheight = 25 //提示窗口标题高度
+                bordercolor = "red";//提示窗口的边框颜色
+                var titlecolor = "#99CCFF";//提示窗口的标题颜色
+                var sWidth, sHeight;
+                sWidth = document.body.offsetWidth;
+                sHeight = screen.height;
+                var bgObj = document.createElement("div");
+                bgObj.setAttribute('id', 'bgDiv');
+                bgObj.style.position = "absolute";
+                bgObj.style.top = "0";
+                bgObj.style.background = "#777";
+                bgObj.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=3,opacity=25,finishOpacity=75";
+                bgObj.style.opacity = "0.6";
+                bgObj.style.left = "0";
+                //bgObj.style.width = sWidth + "px";
+                //bgObj.style.height = sHeight + "px";
+                bgObj.style.borderRadius = "15px";
+                bgObj.style.zIndex = "10000";
+                //document.body.appendChild(bgObj);
+                var msgObj = document.createElement("div");
+                msgObj.setAttribute("id", "msgDiv");
+                msgObj.setAttribute("align", "center");
+                msgObj.style.background = "white";
+                msgObj.style.border = "1px solid " + bordercolor;
+                msgObj.style.position = "absolute";
+                msgObj.style.left = "50%";
+                msgObj.style.top = "20%";
+                msgObj.style.font = "12px/1.6em Verdana, Geneva, Arial, Helvetica, sans-serif";
+                msgObj.style.marginLeft = "-225px";
+                msgObj.style.marginTop = -75 + document.documentElement.scrollTop + "px";
+                msgObj.style.width = msgw + "px";
+                msgObj.style.borderRadius = "15px";
+                msgObj.style.height = msgh + "px";
+                msgObj.style.textAlign = "center";
+                msgObj.style.lineHeight = "25px";
+                msgObj.style.zIndex = "10001";
+                var title = document.createElement("h4");
+                title.setAttribute("id", "msgTitle");
+                title.setAttribute("align", "right");
+                title.style.margin = "0";
+                title.style.backgroundURL = "";
+                title.style.borderTopLeftRadius = "15px";
+                title.style.borderTopRightRadius = "15px";
+                title.style.padding = "3px";
+                title.style.background = bordercolor;
+                title.style.filter = "progid:DXImageTransform.Microsoft.Alpha(startX=20, startY=20, finishX=100, finishY=100,style=1,opacity=75,finishOpacity=100);";
+                title.style.opacity = "0.75";
+                title.style.border = "1px solid " + bordercolor;
+                title.style.height = "18px";
+                title.style.font = "12px Verdana, Geneva, Arial, Helvetica, sans-serif";
+                title.style.color = "white";
+                title.style.cursor = "pointer";
+                title.title = "点击关闭";
+                title.innerHTML = "<table border='0′ width='100%'><tr><td style='width:185px'  align='left'>关闭</td><td align='center' style='width:55px;background:url(../Images/CMS/red.png)  no-repeat'></td></tr></table></div>";
+                title.onclick = function () {
+                    //document.body.removeChild(bgObj);
+                    //document.getElementById("msgDiv").removeChild(title);
+                    //document.body.removeChild(msgObj);
+                    $("#divrule").remove(bgObj);
+                    msgObj.remove(title);
+                    $("#divrule").remove(msgObj);
+                }
+                msgObj.append(title)
+                //document.body.appendChild(msgObj);
+                //document.getElementById("msgDiv").appendChild(title);
+                var txt = document.createElement("p");
+                txt.style.margin = "1em 0"
+                txt.setAttribute("id", "msgTxt");
+                txt.innerHTML = strContent;
+                //document.getElementById("msgDiv").appendChild(txt);
+                $("#divrule").append(bgObj).append(msgObj);
+            }
+		</script>
+    </form>
+</body>
+</html>

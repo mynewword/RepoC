@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		height: 100px;
+		background-color:yellow;
+		margin-top: 10px;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li class="content">1</li>
+		<li class="content">2</li>
+		<li class="content">3</li>
+		<li class="content">4</li>
+		<li class="content">5</li>
+	</ul>
+	
+    <script>
+    	var ls=document.getElementsByClassName("content");
+    	// var ls=document.getElementsByTagName("li");
+    	
+    	for(var i=0;i<5;i++){
+    		ls[i].index=i;
+    		ls[i].onclick=function(){
+    			// alert(i);
+    			alert(this.index);
+    		};
+    	}
+    	// for(var j=0;j<5;j++){
+    	// 	if(j==3){
+    	// 		continue;
+    	// 	}
+    	// 	console.log(j);
+    	// }
+    </script>
+</body>
+</html>

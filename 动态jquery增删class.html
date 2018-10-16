@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$('p').hover(
+		function(){$(this).addClass("intro")},
+		function(){$(this).removeClass("intro")}
+		);
+});
+</script>
+<style>
+.intro{
+	font-size:150%;
+	color:red;
+}
+</style>
+</head>
+<body>
+
+<h1>这是一个标题</h1>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+<button>给第一个P元素添加一个类名</button>
+
+</body>
+</html>

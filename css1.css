@@ -1,0 +1,17 @@
+@charset "utf-8";
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+}
+#box1{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}
+
+
+

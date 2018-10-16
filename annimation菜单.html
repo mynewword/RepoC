@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    *{
+    	padding: 0;
+    }
+	ul li{
+		float: left;
+		position: relative;
+		width: 100px;
+		height: 50px;
+		background-color: pink;
+		line-height: 50px;
+		text-align: center;
+		list-style: none;
+
+	}
+	.hide{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100px;
+		display: none;
+
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li>
+			衣服
+			<ul class="hide" >
+				<li>连衣裙</li>
+				<li>上衣</li>
+				<li>裤子</li>
+				<li>内衣</li>
+			</ul>
+		</li>
+		<li>鞋子
+			<ul class="hide" >
+				<li>奥迪</li>
+				<li>361</li>
+				<li>安踏</li>
+				<li>特步</li>
+			</ul>
+		</li>
+		<li>袜子
+			<ul class="hide" >
+				<li>丝袜</li>
+				<li>类似</li>
+				<li>山脊上</li>
+				<li>内衣</li>
+			</ul>
+		</li>
+		<li>插件
+			<ul class="hide" >
+				<li>连衣裙</li>
+				<li>上衣</li>
+				<li>裤子</li>
+				<li>内衣</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="box"></div>
+    <script src="./jquery-3.3.1.min.js" ></script>
+    <script>
+    	$("ul li").hover(
+    		function(){
+    			$(this).find(".hide").stop().slideDown(500);
+    		},
+    		function(){
+    			$(this).find(".hide").stop().slideUp(500);
+    		}
+    		)
+    </script>
+</body>
+</html>

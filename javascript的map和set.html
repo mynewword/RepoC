@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <script>
+    	"use strict"
+    	var a=new Map();
+    	var s=new Set();
+    	console.log('你的浏览器支持map和set');
+    	var b=new Map([["zhangdong",98],["xiaozhoang",212],[123,990]]);
+    	alert(b.get("zhangdong"));
+    	alert(b.get(123));
+    	b.set("xiaozhoang",111);
+    	alert(b.get("xiaozhoang"));
+    	b.delete(123);
+    	console.log(b);
+        b.set("hello",123);
+    	for(var key of b)
+    	{
+    		console.log(key[0]);
+    		console.log(key[1]);
+    	}//不好使
+    	var c={"zhangdong":123,"ddskfj":112};
+    	for(var i in c)
+    	{
+    		console.log(i);
+    		console.log(c[i]);
+    	}
+    	alert(c["zhangdong"]);
+    	var d={89:123,"ddskfj":112};
+    	alert(d[89]);
+    	var e=new Set([1,2,3,3,"3"]);
+    	 console.log(e);
+    	 e.add(6);
+    	 console.log(e);
+    	 e.delete("3");
+    	 console.log(e);
+    	 for(var j of e)
+    	 {
+    	 	console.log(j);
+    	 }
+    	 var f=["sdf","df","fdf"];
+    	 for(var g in f)
+    	 {
+    	 	console.log(g);
+    	 	console.log(f[g]);
+    	 }
+
+    </script>
+</body>
+</html>
